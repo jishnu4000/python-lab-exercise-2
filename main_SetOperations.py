@@ -1,3 +1,5 @@
+# main script for Question 2
+
 from module_SetOperations import *
 import random
 
