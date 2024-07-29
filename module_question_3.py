@@ -2,13 +2,13 @@
 # (a)
 def merging_Dict(*args: dict) -> dict:
   """
-    Takes multiple dictionaries and merges them into one.
-    
-    Args:
-    *dicts: Arbitrary number of dictionaries
-    
-    Returns:
-    dict: The final merged dictionary
+  Takes multiple dictionaries and merges them into one.
+  
+  Args:
+  *dicts: Arbitrary number of dictionaries
+  
+  Returns:
+  dict: The final merged dictionary
   """
   result = dict()
   for arg in args:
@@ -21,13 +21,13 @@ def merging_Dict(*args: dict) -> dict:
 # (b)
 def common_Keys(*args: dict) -> set:
   """
-    Finds common keys across multiple dictionaries.
-    
-    Args:
-    *dicts: Arbitrary number of dictionaries
-    
-    Returns:
-    set: The set with all common keys
+  Finds common keys across multiple dictionaries.
+  
+  Args:
+  *dicts: Arbitrary number of dictionaries
+  
+  Returns:
+  set: The set with all common keys
   """
   # if no input return empty dictionary
   if not args:
@@ -45,14 +45,14 @@ def common_Keys(*args: dict) -> set:
 # (c)
 def invert_Dict(arg: dict) -> dict:
   """
-    Inverts a dictionary, swapping keys and values.
-    If multiple keys have the same value, groups these keys in a list in the inverted dictionary.
-    
-    Args:
-    dict: Dictionary to be inverted
-    
-    Returns:
-    dict: The dictionary with inverted key-value pairs
+  Inverts a dictionary, swapping keys and values.
+  If multiple keys have the same value, groups these keys in a list in the inverted dictionary.
+  
+  Args:
+  dict: Dictionary to be inverted
+  
+  Returns:
+  dict: The dictionary with inverted key-value pairs
   """
   result = {}
   for key, val in arg.items():
@@ -68,14 +68,14 @@ def invert_Dict(arg: dict) -> dict:
 # (d)
 def common_Pairs(*args: dict) -> dict:
   """
-    Finds common key-value pairs across multiple dictionaries.
-    
-    Args:
-    *dicts: Arbitrary number of dictionaries
-    
-    Returns:
-    dict: A dictionary containing the common key-value pairs
-    """
+  Finds common key-value pairs across multiple dictionaries.
+  
+  Args:
+  *dicts: Arbitrary number of dictionaries
+  
+  Returns:
+  dict: A dictionary containing the common key-value pairs
+  """
   # if no input return empty dictionary
   if not args:
     return {}
